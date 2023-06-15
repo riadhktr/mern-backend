@@ -17,7 +17,7 @@ connectDb() ;
 
 app.use( '/public',express.static('public'));
 
-app.use(cors({credentials: true ,origin:"http://localhost:3000"}))
+app.use(cors({credentials: true}))
 
 app.use(express.json({extended: false}))
 
